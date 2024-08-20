@@ -1,13 +1,13 @@
 {% set name = "rio-vrt" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rio-vrt-{{ version }}.tar.gz
-  sha256: da41e69e9acd230a811f0a07ba548957317bda69a23275e4a1b27bb033750893
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e6dd8d483b748b0b800ebd1109c9d5be121185833aa4c061e7cbeda41c23ad40
 
 build:
   noarch: python
